@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube clone</title>
+    <link rel="stylesheet" href="css/style.css"> <link rel="stylesheet" href="css/reset.css"> 
+    <script src="https://kit.fontawesome.com/a13872bec7.js" crossorigin="anonymous"></script>   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--nav bar-->
+    <nav>
+        <div id="nav-left">
+            <a><i class="fas fa-bars"></i></a>
+            <a class="logo" href=""><img id="logoImg" src="youtubeLogo.svg"></a>
+         </div>
+            
+        <div id="nav-center">
+            <input id="search" autocapitalize="none" autocomplete="off" autocorrect="off" name="search_query" tabindex="0" type="text" spellcheck="false" placeholder="Search">
+            <i class="nav-icon fas fa-search"></i>
+            <i class="nav-icon fas fa-microphone"></i>
+        </div>
+        
+        <div id="nav-right">
+            <i class="nav-icon fas fa-video"></i>
+            <i class="nav-icon fas fa-th"></i>
+            <i class="nav-icon fas fa-bell"></i>
+            <i class="nav-icon fas fa-user-circle"></i>
+        </div>
+    </nav>
+
+    <main>
+        <!--main video div-->
+        <div class="section" id="main-video-container">
+            <iframe width="100%" height="550" src="https://www.youtube.com/embed/MrVlsvd0nlQ?
+            "  
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+        <!--info-->
+        <div class="section container" id="title-container">
+            <div id="title-details">
+                <h1 class="header">Cosmos: Carl Sagan on whale songs</h1>
+                <h2 class="subheader">168 views . May 3, 2021</h2>
+            </div>
+            <div id="actions-container">
+                <ul id="actions-items">
+                    <li class="thumbs"><i class="far fa-thumbs-up"></i>4</li>
+                    <li class="thumbs"><i class="far fa-thumbs-down"></i>0</li>
+                    <li><i class="fas fa-share"></i>SHARE</li>
+                    <li><i class="fas fa-list"></i>SAVE</li>
+                    <li><i class="fas fa-ellipsis-h"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section container"id="channel-container">
+            <div id="channel-left">
+                <div id="channel-img">
+                    <a href="#"><img src="cube-pic.jpg" alt="user thumbnail"></a>
+                    <!--<i class="nav-icon fas fa-user-circle"></i>-->
+                </div>
+                <div id="channel-info">
+                    <h2 class="header">Cube</h2>
+                    <h3 class="subheader"> 3 subscribers</h3>
+                </div>
+            </div>
+            <div>
+                <button id="channel-button">SUBSCRIBE</button>
+            </div>
+        </div>
+        <!--suggested videos section--> 
+        <div class="section container" id="videos-container">
+
+            <div class="video">
+                <div class="video-thumbnail">
+                    <img class="video-image" src="evolution.webp" alt="video thumbnail">
+                    <div class="time">3:35</div>
+                </div>
+                <div class="video-text">
+                    <h3>Carl Sagan - COSMOS - Evolution</h3>
+                    <div class="video-details">
+                        <p> carlsagandotcom <i class="fas fa-check-circle"></i></p>
+                        <p>393K views . 12 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="video-thumbnail">
+                    <img class="video-image" src="windmills.webp" alt="video thumbnail">
+                    <div class="time">18:03</div>
+                </div>
+                <div class="video-text">
+                    <h3>Akira kurosawa | Dreams Film | The village of the Watermills</h3>
+                    <div class="video-details">
+                        <p> Red pill and blue pill <i class="fas fa-check-circle"></i></p>
+                        <p>4.9K views views . 11 months ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="video-thumbnail">
+                    <img class="video-image" src="mycelium.webp" alt="video thumbnail">
+                    <div class="time">2:02</div>
+                </div>
+                <div class="video-text">
+                    <h3>Fantastic Fungi, Official Film Trailer | Moving Art by Louie Schwartzberg</h3>
+                    <div class="video-details">
+                        <p> melodysheep <i class="fas fa-check-circle"></i></p>
+                        <p>1.2M views . 2 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="video-thumbnail">
+                    <img class="video-image" src="rachelcarson.webp" alt="video thumbnail">
+                    <div class="time">10:39:08</div>
+                </div>
+                <div class="video-text">
+                    <h3>Silent Spring - Rachel Carson (1962) audiobook</h3>
+                    <div class="video-details">
+                        <p> kuldeep <i class="fas fa-check-circle"></i></p>
+                        <p>4.4K views . 3 months ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="video-thumbnail">
+                    <img class="video-image" src="attenborough.webp" alt="video thumbnail">
+                    <div class="time">3:35</div>
+                </div>
+                <div class="video-text">
+                    <h3>Amazing Lyre bird, BBC David Attenborough</h3>
+                    <div class="video-details">
+                        <p> Ashkan Niujpour <i class="fas fa-check-circle"></i></p>
+                        <p>56K views . 8 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="video-thumbnail">
+                    <img class="video-image" src="permaculture.webp" alt="video thumbnail">
+                    <div class="time">3:35</div>
+                </div>
+                <div class="video-text">
+                    <h3>What is Permaculture? By Bill Mollison, David Holmgren</h3>
+                    <div class="video-details">
+                        <p> DogsGoWoofProductions <i class="fas fa-check-circle"></i></p>
+                        <p>81K views . 3 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="video-thumbnail">
+                    <img class="video-image" src="trees.webp" alt="video thumbnail">
+                    <div class="time">3:35</div>
+                </div>
+                <div class="video-text">
+                    <h3>How trees talk to each other | Suzanne Simard</h3>
+                    <div class="video-details">
+                        <p> melodysheep <i class="fas fa-check-circle"></i></p>
+                        <p>1.7M views . 5 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="video-thumbnail">
+                    <img class="video-image" src="koko.webp" alt="video thumbnail">
+                    <div class="time">4:41</div>
+                </div>
+                <div class="video-text">
+                    <h3>A Conversation With Koko</h3>
+                    <div class="video-details">
+                        <p> Beth Gallagher <i class="fas fa-check-circle"></i></p>
+                        <p>21M views . 8 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="video-thumbnail">
+                    <img class="video-image" src="beluga.webp" alt="video thumbnail">
+                    <div class="time">3:35</div>
+                </div>
+                <div class="video-text">
+                    <h3>Mariachi Conneticut Serenades a Beluga Whale</h3>
+                    <div class="video-details">
+                        <p> captainkickstand <i class="fas fa-check-circle"></i></p>
+                        <p>6.5M views . 10 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="video-thumbnail">
+                    <img class="video-image" src="josephcampbell.webp" alt="video thumbnail">
+                    <div class="time">2:21</div>
+                </div>
+                <div class="video-text">
+                    <h3>Joseph Campbell--The Dynamic of Life</h3>
+                    <div class="video-details">
+                        <p> Joseph Campbell Foundation <i class="fas fa-check-circle"></i></p>
+                        <p>226K views . 11 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="video-thumbnail">
+                    <img class="video-image" src="light.webp" alt="video thumbnail">
+                    <div class="time">12:12</div>
+                </div>
+                <div class="video-text">
+                    <h3>Understanding Light and Why it Exists</h3>
+                    <div class="video-details">
+                        <p> But Why? <i class="fas fa-check-circle"></i></p>
+                        <p>26K views . 2 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="video-thumbnail">
+                    <img class="video-image" src="crows.webp" alt="video thumbnail">
+                    <div class="time">3:35</div>
+                </div>
+                <div class="video-text">
+                    <h3>CROWS - Dreams (夢 Yume, aka Akira Kurosawa's Dreams) 1990</h3>
+                    <div class="video-details">
+                        <p> BuenasJuergas <i class="fas fa-check-circle"></i></p>
+                        <p>66K views . 2 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div id="video-thumbnail">
+                    <img class="video-image" src="thumbnail1.webp" alt="video thumbnail">
+                    <div class="time">3:35</div>
+                </div>
+                <div class="video-text">
+                    <h3>Carl Sagan - 'A Glorious Dawn' ft Stephen Hawking</h3>
+                    <div class="video-details">
+                        <p> melodysheep <i class="fas fa-check-circle"></i></p>
+                        <p>12M views . 11 years ago</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </main> 
+     <!--side/recommendations bar-->
+
+</body>
+</html>
+
+
